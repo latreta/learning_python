@@ -26,17 +26,7 @@ def isVehicleAdded(vehicles, vehicle):
         pass
 
 # printLastItem(vehicles)
-replaceValueAt(vehicles, "Airplane", 1)
-addItemAt(vehicles, "Car", 1)
+# replaceValueAt(vehicles, "Airplane", 1)
+# addItemAt(vehicles, "Car", 1)
 # getVehiclesCount(vehicles)
-isVehicleAdded(vehicles, "Airplane")
-
-
-
-
-
-# Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
-
-# Set is a collection which is unordered and unindexed. No duplicate members.
-
-# Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
+# isVehicleAdded(vehicles, "Airplane")
