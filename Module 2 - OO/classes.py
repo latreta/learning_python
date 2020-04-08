@@ -9,9 +9,15 @@ class Person:
         else:
             return False
 
+class Admin(Person):
+    pass
 
 pessoa = Person("Yves", 26)
+admin = Admin("Admin", 26)
 
-print(pessoa.name)
-print(pessoa.age)
-print(pessoa.isUnderAge())
+def displayUser(user):
+    print(f"Nome:{user.name}\nIdade:{user.age}")
+    print("É menor de idade") if user.isUnderAge() else print("É maior de idade")
+
+displayUser(pessoa)
+displayUser(admin)
