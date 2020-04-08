@@ -25,6 +25,15 @@ def isVehicleAdded(vehicles, vehicle):
         print("No")
         pass
 
+# functions = {
+#     0: printLastItem,
+#     1: replaceValueAt,
+#     2: addItemAt,
+#     3: addItem,
+#     4: getVehiclesCount,
+#     5: isVehicleAdded
+# }
+
 # printLastItem(vehicles)
 # replaceValueAt(vehicles, "Airplane", 1)
 # addItemAt(vehicles, "Car", 1)
