@@ -1,5 +1,8 @@
+_fileName = "names.txt"
+breakline = "\n"
+
 def handleName(name):
-    return name.replace("\n","")
+    return name.replace(breakline,"")
 
 def readFile(fileName):
     f = open(fileName, "rt")
@@ -9,7 +12,12 @@ def readFile(fileName):
     f.close()
     return names
 
+def addName(fileName, name):
+    f = open(fileName, "at")
+    f.write(breakline)
+    f.write(name)
+    f.close()
 
-_fileName = "names.txt"
-
+print(readFile(_fileName))
+addName(_fileName, "Teste")
 print(readFile(_fileName))
