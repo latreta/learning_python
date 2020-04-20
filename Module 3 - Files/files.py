@@ -1,3 +1,5 @@
+import os
+
 _fileName = "names.txt"
 breakline = "\n"
 
@@ -14,10 +16,16 @@ def readFile(fileName):
 
 def addName(fileName, name):
     f = open(fileName, "at")
-    f.write(breakline)
     f.write(name)
+    f.write(breakline)
     f.close()
 
-print(readFile(_fileName))
+def deleteFile(fileName):
+    if os.path.exists(fileName):
+        os.remove(fileName)
+    else:
+        print("Arquivo nao existe")
+
 addName(_fileName, "Teste")
 print(readFile(_fileName))
+#deleteFile(_fileName)
